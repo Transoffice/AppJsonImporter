@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AppJsonImporter
 {
-    class Route
+    public class Route
     {
         private int _LEVEL;
         private bool _expanded = false;
@@ -100,7 +100,7 @@ namespace AppJsonImporter
             set { this._DETAILS = value; }
         }
 
-        private void setRoute(int val1, bool val2, bool val3, string val4, int val5, int val6, double val7, double val8, double val9, double val10, double val11, double val12, double val13)
+        public void setRoute(int val1, bool val2, bool val3, string val4, int val5, int val6, double val7, double val8, double val9, double val10, double val11, double val12, double val13, string val14, string val15)
         {
             _LEVEL = val1;
             _expanded = val2;
@@ -115,6 +115,8 @@ namespace AppJsonImporter
             _FtWEIGHT5 = val11;
             _FtWEIGHT6 = val12;
             _FtWEIGHT7 = val13;
+            _MAP = val14;
+            _DETAILS = val15;
         }
 
         public int getLevel()
